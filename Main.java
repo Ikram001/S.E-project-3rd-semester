@@ -3,7 +3,7 @@ import java.util.Scanner;
 class calc {
     public static void main(String[] args) {
 
-        char op;
+        char operator;
         Double number1, number2, result;
 
         // create an object of Scanner class
@@ -11,7 +11,7 @@ class calc {
 
         // ask users to enter operator
         System.out.println("Choose an operator: +, -, *, or /");
-        op = input.next().charAt(0);
+        operator = input.next().charAt(0);
 
         // ask users to enter numbers
         System.out.println("Enter first number");
@@ -20,7 +20,7 @@ class calc {
         System.out.println("Enter second number");
         number2 = input.nextDouble();
 
-        switch (op) {
+        switch (operator) {
 
             // performs addition between numbers
             case '+':
