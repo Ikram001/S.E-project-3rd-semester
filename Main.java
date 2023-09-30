@@ -7,18 +7,18 @@ class calc {
         Double num1, num2, result;
 
         // create an object of Scanner class
-        Scanner input = new Scanner(System.in);
+        Scanner user.input = new Scanner(System.in);
 
         // ask users to enter operator
         System.out.println("Choose an operator: +, -, *, or /");
-        operator = input.next().charAt(0);
+        operator = user.input.next().charAt(0);
 
         // ask users to enter nums
         System.out.println("Enter first num");
-        num1 = input.nextDouble();
+        num1 = user.input.nextDouble();
 
         System.out.println("Enter second num");
-        num2 = input.nextDouble();
+        num2 = user.input.nextDouble();
 
         switch (operator) {
 
@@ -51,6 +51,6 @@ class calc {
                 break;
         }
 
-        input.close();
+        user.input.close();
     }
 }
